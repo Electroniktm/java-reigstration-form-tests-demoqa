@@ -40,3 +40,17 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Plans and documentation
+plans/
+project.md
+registration-form-inspection.txt
+text-box-inspection.txt
+
+# Test inspection/debug files
+src/test/java/tests/examples/
+src/test/java/tests/ComprehensiveMissingTests.java
+src/test/java/tests/DumpDropdownOptions.java
+src/test/java/tests/DumpPageHtml.java
+src/test/java/tests/ExtendedLoginTests.java
+src/test/java/tests/LoginTests.java
