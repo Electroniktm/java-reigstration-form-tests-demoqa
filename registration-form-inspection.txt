@@ -1,0 +1,53 @@
+=== All inputs ===
+0: id=firstName name= type=text
+1: id=lastName name= type=text
+2: id=userEmail name= type=text
+3: id=gender-radio-1 name=gender type=radio
+4: id=gender-radio-2 name=gender type=radio
+5: id=gender-radio-3 name=gender type=radio
+6: id=userNumber name= type=text
+7: id=dateOfBirthInput name= type=text
+8: id=subjectsInput name= type=text
+9: id=hobbies-checkbox-1 name= type=checkbox
+10: id=hobbies-checkbox-2 name= type=checkbox
+11: id=hobbies-checkbox-3 name= type=checkbox
+12: id=uploadPicture name= type=file
+13: id=react-select-3-input name= type=text
+14: id=react-select-4-input name= type=text
+=== All labels ===
+0: Name
+1: Email
+2: Male
+3: Female
+4: Other
+5: Mobile(10 Digits)
+6: Date of Birth
+7: Subjects
+8: Hobbies
+9: Sports
+10: Reading
+11: Music
+12: Picture
+13: Current Address
+14: State and City
+=== All divs with id ===
+0: root
+1: userName-wrapper
+2: userEmail-wrapper
+3: genterWrapper
+4: userNumber-wrapper
+5: dateOfBirth-wrapper
+6: dateOfBirth
+7: subjectsWrapper
+8: subjectsContainer
+9: react-select-2-placeholder
+10: hobbiesWrapper
+11: currentAddress-wrapper
+12: stateCity-wrapper
+13: state
+14: react-select-3-placeholder
+15: city
+16: react-select-4-placeholder
+17: Ad.Plus-970x250-2
+18: Ad.Plus-300x250-1
+19: Ad.Plus-300x250-2
