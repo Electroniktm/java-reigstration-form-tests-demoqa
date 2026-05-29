@@ -2,12 +2,11 @@
 build/
 out/
 
-
 # Gradle
 .gradle/
 gradle-app.setting
 
-# Gradle wrapper (ignored - should be downloaded separately)
+# Gradle wrapper
 gradle/wrapper/*.jar
 gradle/wrapper/gradle-wrapper.properties
 
@@ -29,14 +28,15 @@ factorypath/
 # Test reports and results
 build/reports/
 build/test-results/
-*.png
-*.html
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Specific test files to exclude
-src/test/java/tests.ExtendedLoginTests.java
-src/test/java/tests.ComprehensiveMissingTests.java
-src/test/java/tests/examples
+# Secrets and credentials
+*.keystore
+*.pem
+*.jks
+
+# Logs
+*.log
