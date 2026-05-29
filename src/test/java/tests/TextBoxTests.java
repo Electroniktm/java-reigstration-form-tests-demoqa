@@ -23,19 +23,12 @@ public class TextBoxTests extends TestBase {
         $("[id=output] [id=permanentAddress]").shouldHave(text("second address 2"));
     }
 
-    // ==================== TEXT BOX FORM TESTS ====================
-
     @Test
     void textBoxMinimalFieldsTest() {
         open("/text-box");
-
-        // Fill only Full Name (required field)
         $("#userName").setValue("John Doe");
-
-        // Submit
         $("#submit").click();
 
-        // Verify success - check the output section
         $("#output").shouldBe(visible);
         $("[id=output] [id=name]").shouldHave(text("John Doe"));
     }
@@ -43,25 +36,16 @@ public class TextBoxTests extends TestBase {
     @Test
     void textBoxEmptyFieldsTest() {
         open("/text-box");
-
-        // Don't fill anything, just click Submit
         $("#submit").click();
-
-        // Verify output shows empty values
         $("#output").shouldBe(hidden);
     }
 
     @Test
     void textBoxTooLongNameTest() {
         open("https://demoqa.com/text-box");
-
-        // Fill name with more than 25 characters (exceeding limit)
         $("#userName").setValue("JohnJohnJohnJohnJohnJohnJohnJohnJohnJohn");
-
-        // Submit
         $("#submit").click();
 
-        // Verify output shows the long name (no validation in this form)
         $("#output").shouldBe(visible);
         $("[id=output] [id=name]").shouldHave(text("JohnJohnJohnJohnJohnJohnJohnJohnJohnJohn"));
     }
