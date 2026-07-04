@@ -3,6 +3,7 @@ package tests;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationFormTests extends TestBase {
@@ -14,21 +15,17 @@ public class RegistrationFormTests extends TestBase {
         $("#lastName").setValue("Doe");
         $("#userEmail").setValue("john.doe@example.com");
 
-        $("#genterWrapper").$$("label").findBy(text("Male")).click();
+        $("#genterWrapper").$(byText("Male")).click();
 
         $("#userNumber").setValue("1234567890");
 
         $("[id=dateOfBirthInput]").click();
-        $(".react-datepicker__month-select").selectOption(month - 1);
-        $(".react-datepicker__year-select").selectOption(String.valueOf(year - 10));
-        String dayFormatted = String.format("%03d", day-10);
-        $(".react-datepicker__day--" + dayFormatted + ":not(.react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__month-select").$(byText("June")).click();
+        $(".react-datepicker__year-select").$(byText("2023")).click();
 
-        $("#subjectsInput").click();
-        $("#subjectsInput").setValue("English");
-        $(".subjects-auto-complete__option").click();
+        $(".react-datepicker__day--005").click();
 
-        $("[id=hobbies-checkbox-1]").click();
+        $("#subjectsInput").setValue("English").pressEnter();
 
         $("#uploadPicture").uploadFromClasspath("test.png");
 
@@ -36,6 +33,8 @@ public class RegistrationFormTests extends TestBase {
 
         $("[id='react-select-3-input']").setValue("Uttar Pradesh").pressEnter();
         $("[id='react-select-4-input']").setValue("Agra").pressEnter();
+
+        $("[id='hobbies-checkbox-1']").click();
 
         $("#submit").click();
 
@@ -59,15 +58,13 @@ public class RegistrationFormTests extends TestBase {
         $("#lastName").setValue("Doe");
         $("#userEmail").setValue("john.doe@example.com");
 
-        $("#genterWrapper").$$("label").findBy(text("Male")).click();
+        $("#genterWrapper").$(byText("Male")).click();
 
         $("#userNumber").setValue("1234567890");
 
         $("[id=dateOfBirthInput]").click();
-        $(".react-datepicker__month-select").selectOption(month - 1);
-        $(".react-datepicker__year-select").selectOption(String.valueOf(year - 10));
-        String dayFormatted = String.format("%03d", day-10);
-        $(".react-datepicker__day--" + dayFormatted + ":not(.react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__month-select").$(byText("June")).click();
+        $(".react-datepicker__year-select").$(byText("2023")).click();
 
         $("#submit").click();
 
@@ -86,15 +83,13 @@ public class RegistrationFormTests extends TestBase {
         $("#lastName").setValue("Doe");
         $("#userEmail").setValue("john.doe@example");
 
-        $("#genterWrapper").$$("label").findBy(text("Male")).click();
+        $("#genterWrapper").$(byText("Male")).click();
 
         $("#userNumber").setValue("1234567890");
 
         $("[id=dateOfBirthInput]").click();
-        $(".react-datepicker__month-select").selectOption(month - 1);
-        $(".react-datepicker__year-select").selectOption(String.valueOf(year - 10));
-        String dayFormatted = String.format("%03d", day-10);
-        $(".react-datepicker__day--" + dayFormatted + ":not(.react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__month-select").$(byText("June")).click();
+        $(".react-datepicker__year-select").$(byText("2023")).click();
 
         $("#submit").click();
 
@@ -111,10 +106,8 @@ public class RegistrationFormTests extends TestBase {
         $("#userNumber").setValue("1234567890");
 
         $("[id=dateOfBirthInput]").click();
-        $(".react-datepicker__month-select").selectOption(month - 1);
-        $(".react-datepicker__year-select").selectOption(String.valueOf(year - 10));
-        String dayFormatted = String.format("%03d", day-10);
-        $(".react-datepicker__day--" + dayFormatted + ":not(.react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__month-select").$(byText("June")).click();
+        $(".react-datepicker__year-select").$(byText("2023")).click();
 
         $("#submit").click();
 
@@ -130,15 +123,13 @@ public class RegistrationFormTests extends TestBase {
         $("#lastName").setValue("Doe");
         $("#userEmail").setValue("john.doe@example.ru");
 
-        $("#genterWrapper").$$("label").findBy(text("Male")).click();
+        $("#genterWrapper").$(byText("Male")).click();
 
         $("#userNumber").setValue("1234567");
 
         $("[id=dateOfBirthInput]").click();
-        $(".react-datepicker__month-select").selectOption(month - 1);
-        $(".react-datepicker__year-select").selectOption(String.valueOf(year - 10));
-        String dayFormatted = String.format("%03d", day-10);
-        $(".react-datepicker__day--" + dayFormatted + ":not(.react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__month-select").$(byText("June")).click();
+        $(".react-datepicker__year-select").$(byText("2023")).click();
 
         $("#submit").click();
 
@@ -153,15 +144,13 @@ public class RegistrationFormTests extends TestBase {
         $("#lastName").setValue("Doe");
         $("#userEmail").setValue("john.doe@example.com");
 
-        $("#genterWrapper").$$("label").findBy(text("Male")).click();
+        $("#genterWrapper").$(byText("Male")).click();
 
         $("#userNumber").setValue("1234567890");
 
         $("[id=dateOfBirthInput]").click();
-        $(".react-datepicker__month-select").selectOption(month - 1);
-        $(".react-datepicker__year-select").selectOption(String.valueOf(year - 10));
-        String dayFormatted = String.format("%03d", day-10);
-        $(".react-datepicker__day--" + dayFormatted + ":not(.react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__month-select").$(byText("June")).click();
+        $(".react-datepicker__year-select").$(byText("2023")).click();
 
         $("#submit").click();
 

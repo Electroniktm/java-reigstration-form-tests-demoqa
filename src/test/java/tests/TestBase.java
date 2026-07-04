@@ -13,16 +13,6 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
 
-    int month;
-    int year;
-    int day = LocalDate.now().getDayOfMonth();
-
-    {
-        month = LocalDate.now().getMonthValue();
-        year =  LocalDate.now().getYear();
-    }
-
-
     @BeforeAll
     static void beforeALL() {
         Configuration.browserSize = "1920x1280";
