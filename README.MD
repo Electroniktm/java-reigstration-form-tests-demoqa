@@ -5,7 +5,7 @@
 [![JUnit 5](https://img.shields.io/badge/JUnit-5-green.svg)](https://junit.org/junit5/)
 [![Chrome](https://img.shields.io/badge/Браузер-Chrome-lightgrey.svg)](https://www.google.com/chrome/)
 
-> Современная автоматизация UI-тестирования веб-форм для [DemoQA Practice Form](https://demoqa.com) на Selenide и JUnit 5.
+> Современная автоматизация UI-тестирования веб-форм для [DemoQA Practice Form](https://demoqa.com) на Selenide и JUnit 5. (обновлено 17.08.2026)
 
 ---
 
